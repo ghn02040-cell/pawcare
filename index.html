@@ -6,14 +6,7 @@
 <title>PawCare — 반려동물 헬스케어 정보</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    color: #111;
-    background-color: #fdf9f5;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cellipse cx='30' cy='30' rx='10' ry='12' fill='%23f0c9a0' opacity='0.45'/%3E%3Cellipse cx='14' cy='16' rx='5' ry='6' fill='%23f0c9a0' opacity='0.45'/%3E%3Cellipse cx='22' cy='12' rx='5' ry='6' fill='%23f0c9a0' opacity='0.45'/%3E%3Cellipse cx='38' cy='12' rx='5' ry='6' fill='%23f0c9a0' opacity='0.45'/%3E%3Cellipse cx='46' cy='16' rx='5' ry='6' fill='%23f0c9a0' opacity='0.45'/%3E%3Cellipse cx='110' cy='50' rx='7' ry='8' fill='%23f5b8c4' opacity='0.4'/%3E%3Cellipse cx='99' cy='41' rx='3.5' ry='4' fill='%23f5b8c4' opacity='0.4'/%3E%3Cellipse cx='105' cy='38' rx='3.5' ry='4' fill='%23f5b8c4' opacity='0.4'/%3E%3Cellipse cx='115' cy='38' rx='3.5' ry='4' fill='%23f5b8c4' opacity='0.4'/%3E%3Cellipse cx='121' cy='41' rx='3.5' ry='4' fill='%23f5b8c4' opacity='0.4'/%3E%3Cg transform='rotate(-30 80 120)'%3E%3Cellipse cx='80' cy='120' rx='9' ry='11' fill='%23f0c9a0' opacity='0.35'/%3E%3Cellipse cx='66' cy='108' rx='4.5' ry='5.5' fill='%23f0c9a0' opacity='0.35'/%3E%3Cellipse cx='74' cy='104' rx='4.5' ry='5.5' fill='%23f0c9a0' opacity='0.35'/%3E%3Cellipse cx='86' cy='104' rx='4.5' ry='5.5' fill='%23f0c9a0' opacity='0.35'/%3E%3Cellipse cx='94' cy='108' rx='4.5' ry='5.5' fill='%23f0c9a0' opacity='0.35'/%3E%3C/g%3E%3Cellipse cx='140' cy='140' rx='7' ry='8' fill='%23f5b8c4' opacity='0.38'/%3E%3Cellipse cx='129' cy='131' rx='3.5' ry='4' fill='%23f5b8c4' opacity='0.38'/%3E%3Cellipse cx='135' cy='128' rx='3.5' ry='4' fill='%23f5b8c4' opacity='0.38'/%3E%3Cellipse cx='145' cy='128' rx='3.5' ry='4' fill='%23f5b8c4' opacity='0.38'/%3E%3Cellipse cx='151' cy='131' rx='3.5' ry='4' fill='%23f5b8c4' opacity='0.38'/%3E%3C/svg%3E");
-    background-repeat: repeat;
-    background-size: 160px 160px;
-  }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #111; background-color: #fdf9f5; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cellipse cx='30' cy='30' rx='10' ry='12' fill='%23f0c9a0' opacity='0.45'/%3E%3Cellipse cx='14' cy='16' rx='5' ry='6' fill='%23f0c9a0' opacity='0.45'/%3E%3Cellipse cx='22' cy='12' rx='5' ry='6' fill='%23f0c9a0' opacity='0.45'/%3E%3Cellipse cx='38' cy='12' rx='5' ry='6' fill='%23f0c9a0' opacity='0.45'/%3E%3Cellipse cx='46' cy='16' rx='5' ry='6' fill='%23f0c9a0' opacity='0.45'/%3E%3Cellipse cx='110' cy='50' rx='7' ry='8' fill='%23f5b8c4' opacity='0.4'/%3E%3Cellipse cx='99' cy='41' rx='3.5' ry='4' fill='%23f5b8c4' opacity='0.4'/%3E%3Cellipse cx='105' cy='38' rx='3.5' ry='4' fill='%23f5b8c4' opacity='0.4'/%3E%3Cellipse cx='115' cy='38' rx='3.5' ry='4' fill='%23f5b8c4' opacity='0.4'/%3E%3Cellipse cx='121' cy='41' rx='3.5' ry='4' fill='%23f5b8c4' opacity='0.4'/%3E%3Cg transform='rotate(-30 80 120)'%3E%3Cellipse cx='80' cy='120' rx='9' ry='11' fill='%23f0c9a0' opacity='0.35'/%3E%3Cellipse cx='66' cy='108' rx='4.5' ry='5.5' fill='%23f0c9a0' opacity='0.35'/%3E%3Cellipse cx='74' cy='104' rx='4.5' ry='5.5' fill='%23f0c9a0' opacity='0.35'/%3E%3Cellipse cx='86' cy='104' rx='4.5' ry='5.5' fill='%23f0c9a0' opacity='0.35'/%3E%3Cellipse cx='94' cy='108' rx='4.5' ry='5.5' fill='%23f0c9a0' opacity='0.35'/%3E%3C/g%3E%3Cellipse cx='140' cy='140' rx='7' ry='8' fill='%23f5b8c4' opacity='0.38'/%3E%3Cellipse cx='129' cy='131' rx='3.5' ry='4' fill='%23f5b8c4' opacity='0.38'/%3E%3Cellipse cx='135' cy='128' rx='3.5' ry='4' fill='%23f5b8c4' opacity='0.38'/%3E%3Cellipse cx='145' cy='128' rx='3.5' ry='4' fill='%23f5b8c4' opacity='0.38'/%3E%3Cellipse cx='151' cy='131' rx='3.5' ry='4' fill='%23f5b8c4' opacity='0.38'/%3E%3C/svg%3E"); background-repeat: repeat; background-size: 160px 160px; }
   nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 2rem; border-bottom: 1px solid #eee; background: rgba(255,255,255,0.95); backdrop-filter: blur(6px); }
   .nav-logo { font-size: 17px; font-weight: 700; color: #111; display: flex; align-items: center; gap: 8px; }
   .nav-links { display: flex; gap: 24px; }
@@ -38,7 +31,8 @@
   .section-sub { font-size: 13px; color: #888; margin-top: 5px; }
   .see-all { font-size: 13px; color: #1D9E75; cursor: pointer; }
   .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 14px; }
-  .card { background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 1.4rem; }
+  .card { background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 1.4rem; cursor: pointer; transition: box-shadow 0.2s; }
+  .card:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.07); }
   .card-icon { font-size: 26px; margin-bottom: 12px; }
   .card h3 { font-size: 14px; font-weight: 600; margin-bottom: 6px; }
   .card p { font-size: 13px; color: #777; line-height: 1.6; }
@@ -149,10 +143,10 @@
     </div>
   </div>
   <div class="cards">
-    <div class="card"><div class="card-icon">🩺</div><h3>건강 관리</h3><p>정기 검진, 예방접종, 질병 예방 가이드</p></div>
-    <div class="card"><div class="card-icon">🥗</div><h3>영양 & 식이</h3><p>나이·체중별 맞춤 식단과 금지 음식 정보</p></div>
-    <div class="card"><div class="card-icon">🏃</div><h3>운동 & 활동</h3><p>품종별 적정 운동량과 놀이 활동 가이드</p></div>
-    <div class="card"><div class="card-icon">🎓</div><h3>행동 & 훈련</h3><p>기초 훈련부터 문제 행동 교정까지</p></div>
+    <div class="card" onclick="openLink('https://search.naver.com/search.naver?query=반려동물+건강관리')"><div class="card-icon">🩺</div><h3>건강 관리</h3><p>정기 검진, 예방접종, 질병 예방 가이드</p></div>
+    <div class="card" onclick="openLink('https://search.naver.com/search.naver?query=반려동물+영양+식이')"><div class="card-icon">🥗</div><h3>영양 & 식이</h3><p>나이·체중별 맞춤 식단과 금지 음식 정보</p></div>
+    <div class="card" onclick="openLink('https://search.naver.com/search.naver?query=반려동물+운동+활동')"><div class="card-icon">🏃</div><h3>운동 & 활동</h3><p>품종별 적정 운동량과 놀이 활동 가이드</p></div>
+    <div class="card" onclick="openLink('https://search.naver.com/search.naver?query=반려동물+훈련+행동교정')"><div class="card-icon">🎓</div><h3>행동 & 훈련</h3><p>기초 훈련부터 문제 행동 교정까지</p></div>
   </div>
 </div>
 
@@ -173,7 +167,7 @@
     <button class="tab" onclick="setTab(this)">건강</button>
   </div>
   <div class="video-featured">
-    <div class="video-thumb video-thumb-large">
+    <div class="video-thumb video-thumb-large" onclick="openVideo('L-QkmopoK7w')">
       <div class="thumb-img bg-dog large">
         <span class="thumb-emoji-lg">🐶</span>
         <div class="play-btn"><div class="play-icon"></div></div>
@@ -185,7 +179,7 @@
         <div class="video-meta">조회 4.2만 · 3일 전</div>
       </div>
     </div>
-    <div class="video-thumb">
+    <div class="video-thumb" onclick="openVideo('Q4bYYuJfmN0')">
       <div class="thumb-img bg-cat small">
         <span class="thumb-emoji-sm">🐱</span>
         <div class="play-btn-sm"><div class="play-icon-sm"></div></div>
@@ -197,7 +191,7 @@
         <div class="video-meta">조회 2.8만 · 1주 전</div>
       </div>
     </div>
-    <div class="video-thumb">
+    <div class="video-thumb" onclick="openVideo('cDtibw4t1bU')">
       <div class="thumb-img bg-food small">
         <span class="thumb-emoji-sm">🥗</span>
         <div class="play-btn-sm"><div class="play-icon-sm"></div></div>
@@ -211,19 +205,19 @@
     </div>
   </div>
   <div class="video-grid">
-    <div class="video-thumb">
+    <div class="video-thumb" onclick="openVideo('i6w6-Qcjo5M')">
       <div class="thumb-img bg-health small"><span class="thumb-emoji-sm">💊</span><div class="play-btn-sm"><div class="play-icon-sm"></div></div><div class="duration-sm">6:48</div></div>
       <div class="video-info"><span class="video-tag tag-green">건강</span><div class="video-title-sm">강아지 피부 트러블 원인과 관리법</div><div class="video-meta">조회 1.9만</div></div>
     </div>
-    <div class="video-thumb">
+    <div class="video-thumb" onclick="openVideo('wF4mJ7FQspM')">
       <div class="thumb-img bg-cat small"><span class="thumb-emoji-sm">✂️</span><div class="play-btn-sm"><div class="play-icon-sm"></div></div><div class="duration-sm">9:22</div></div>
       <div class="video-info"><span class="video-tag tag-blue">고양이</span><div class="video-title-sm">집에서 하는 고양이 그루밍 완벽 정리</div><div class="video-meta">조회 3.3만</div></div>
     </div>
-    <div class="video-thumb">
+    <div class="video-thumb" onclick="openVideo('dNJxme47QbI')">
       <div class="thumb-img bg-dog small"><span class="thumb-emoji-sm">🦮</span><div class="play-btn-sm"><div class="play-icon-sm"></div></div><div class="duration-sm">7:55</div></div>
       <div class="video-info"><span class="video-tag tag-green">훈련</span><div class="video-title-sm">산책이 즐거워지는 리드줄 훈련법</div><div class="video-meta">조회 2.1만</div></div>
     </div>
-    <div class="video-thumb">
+    <div class="video-thumb" onclick="openVideo('P7OvNBuy1oo')">
       <div class="thumb-img bg-health small"><span class="thumb-emoji-sm">🦷</span><div class="play-btn-sm"><div class="play-icon-sm"></div></div><div class="duration-sm">5:30</div></div>
       <div class="video-info"><span class="video-tag tag-amber">건강</span><div class="video-title-sm">반려동물 치아 관리, 이렇게 하세요</div><div class="video-meta">조회 1.4만</div></div>
     </div>
@@ -244,10 +238,10 @@
   <div class="section-title">반려동물 별 가이드</div>
   <div class="section-sub" style="margin-top:5px;">우리 아이 종류에 맞는 맞춤 정보</div>
   <div class="pets">
-    <div class="pet-card"><div class="pet-emoji">🐶</div><div class="pet-name">강아지</div><div class="pet-desc">품종별 특성 · 훈련 · 질병</div></div>
-    <div class="pet-card"><div class="pet-emoji">🐱</div><div class="pet-name">고양이</div><div class="pet-desc">스트레스 관리 · 영양 · 미용</div></div>
-    <div class="pet-card"><div class="pet-emoji">🐰</div><div class="pet-name">토끼</div><div class="pet-desc">서식 환경 · 식이 · 사회화</div></div>
-    <div class="pet-card"><div class="pet-emoji">🐹</div><div class="pet-name">햄스터</div><div class="pet-desc">케이지 · 먹이 · 수명 관리</div></div>
+    <div class="pet-card" onclick="openLink('https://search.naver.com/search.naver?query=강아지+건강+가이드')"><div class="pet-emoji">🐶</div><div class="pet-name">강아지</div><div class="pet-desc">품종별 특성 · 훈련 · 질병</div></div>
+    <div class="pet-card" onclick="openLink('https://search.naver.com/search.naver?query=고양이+건강+가이드')"><div class="pet-emoji">🐱</div><div class="pet-name">고양이</div><div class="pet-desc">스트레스 관리 · 영양 · 미용</div></div>
+    <div class="pet-card" onclick="openLink('https://search.naver.com/search.naver?query=토끼+건강+가이드')"><div class="pet-emoji">🐰</div><div class="pet-name">토끼</div><div class="pet-desc">서식 환경 · 식이 · 사회화</div></div>
+    <div class="pet-card" onclick="openLink('https://search.naver.com/search.naver?query=햄스터+건강+가이드')"><div class="pet-emoji">🐹</div><div class="pet-name">햄스터</div><div class="pet-desc">케이지 · 먹이 · 수명 관리</div></div>
   </div>
 </div>
 
@@ -289,6 +283,12 @@
   function setTab(el) {
     document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
     el.classList.add('active');
+  }
+  function openVideo(id) {
+    window.open('https://www.youtube.com/watch?v=' + id, '_blank');
+  }
+  function openLink(url) {
+    window.open(url, '_blank');
   }
 </script>
 </body>

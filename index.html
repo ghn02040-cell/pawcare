@@ -8,7 +8,7 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #111; background-color: #fdf9f5; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cellipse cx='30' cy='30' rx='10' ry='12' fill='%23f0c9a0' opacity='0.45'/%3E%3Cellipse cx='14' cy='16' rx='5' ry='6' fill='%23f0c9a0' opacity='0.45'/%3E%3Cellipse cx='22' cy='12' rx='5' ry='6' fill='%23f0c9a0' opacity='0.45'/%3E%3Cellipse cx='38' cy='12' rx='5' ry='6' fill='%23f0c9a0' opacity='0.45'/%3E%3Cellipse cx='46' cy='16' rx='5' ry='6' fill='%23f0c9a0' opacity='0.45'/%3E%3Cellipse cx='110' cy='50' rx='7' ry='8' fill='%23f5b8c4' opacity='0.4'/%3E%3Cellipse cx='99' cy='41' rx='3.5' ry='4' fill='%23f5b8c4' opacity='0.4'/%3E%3Cellipse cx='105' cy='38' rx='3.5' ry='4' fill='%23f5b8c4' opacity='0.4'/%3E%3Cellipse cx='115' cy='38' rx='3.5' ry='4' fill='%23f5b8c4' opacity='0.4'/%3E%3Cellipse cx='121' cy='41' rx='3.5' ry='4' fill='%23f5b8c4' opacity='0.4'/%3E%3Cg transform='rotate(-30 80 120)'%3E%3Cellipse cx='80' cy='120' rx='9' ry='11' fill='%23f0c9a0' opacity='0.35'/%3E%3Cellipse cx='66' cy='108' rx='4.5' ry='5.5' fill='%23f0c9a0' opacity='0.35'/%3E%3Cellipse cx='74' cy='104' rx='4.5' ry='5.5' fill='%23f0c9a0' opacity='0.35'/%3E%3Cellipse cx='86' cy='104' rx='4.5' ry='5.5' fill='%23f0c9a0' opacity='0.35'/%3E%3Cellipse cx='94' cy='108' rx='4.5' ry='5.5' fill='%23f0c9a0' opacity='0.35'/%3E%3C/g%3E%3Cellipse cx='140' cy='140' rx='7' ry='8' fill='%23f5b8c4' opacity='0.38'/%3E%3Cellipse cx='129' cy='131' rx='3.5' ry='4' fill='%23f5b8c4' opacity='0.38'/%3E%3Cellipse cx='135' cy='128' rx='3.5' ry='4' fill='%23f5b8c4' opacity='0.38'/%3E%3Cellipse cx='145' cy='128' rx='3.5' ry='4' fill='%23f5b8c4' opacity='0.38'/%3E%3Cellipse cx='151' cy='131' rx='3.5' ry='4' fill='%23f5b8c4' opacity='0.38'/%3E%3C/svg%3E"); background-repeat: repeat; background-size: 160px 160px; }
-  nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 2rem; border-bottom: 1px solid #eee; background: rgba(255,255,255,0.95); backdrop-filter: blur(6px); }
+  nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 2rem; border-bottom: 1px solid #eee; background: rgba(255,255,255,0.95); }
   .nav-logo { font-size: 17px; font-weight: 700; color: #111; display: flex; align-items: center; gap: 8px; }
   .nav-links { display: flex; gap: 24px; }
   .nav-links a { font-size: 14px; color: #666; text-decoration: none; }
@@ -101,7 +101,7 @@
 <body>
 
 <nav>
-  <div class="nav-logo"><span>🐾</span> PawCare</div>
+  <div class="nav-logo"><span>&#x1F43E;</span> PawCare</div>
   <div class="nav-links">
     <a href="#categories">건강 정보</a>
     <a href="#tips">영양</a>
@@ -111,12 +111,12 @@
 </nav>
 
 <div class="hero">
-  <div class="badge">🐾 반려동물 건강 가이드</div>
+  <div class="badge">&#x1F43E; 반려동물 건강 가이드</div>
   <h1>우리 아이, 더 건강하고<br>행복하게 키우세요</h1>
   <p>수의사와 전문가가 검증한 반려동물 건강 정보를 한 곳에서. 강아지부터 고양이까지, 맞춤 케어 가이드를 제공합니다.</p>
   <div class="btn-group">
-    <button class="btn-primary" onclick="openLink('https://map.naver.com/v5/search/동물병원')">건강 체크 시작하기</button>
-    <button class="btn-secondary" onclick="openLink('https://www.animal.go.kr')">더 알아보기</button>
+    <button class="btn-primary" onclick="goLink('https://map.naver.com/v5/search/%EB%8F%99%EB%AC%BC%EB%B3%91%EC%9B%90')">건강 체크 시작하기</button>
+    <button class="btn-secondary" onclick="goLink('https://www.animal.go.kr')">더 알아보기</button>
   </div>
 </div>
 
@@ -134,10 +134,10 @@
     </div>
   </div>
   <div class="cards">
-    <div class="card" onclick="openLink('https://www.animal.go.kr/front/community/health/list.do')"><div class="card-icon">🩺</div><h3>건강 관리</h3><p>정기 검진, 예방접종, 질병 예방 가이드</p></div>
-    <div class="card" onclick="openLink('https://www.youtube.com/watch?v=cDtibw4t1bU')"><div class="card-icon">🥗</div><h3>영양 & 식이</h3><p>나이·체중별 맞춤 식단과 금지 음식 정보</p></div>
-    <div class="card" onclick="openLink('https://www.youtube.com/watch?v=dNJxme47QbI')"><div class="card-icon">🏃</div><h3>운동 & 활동</h3><p>품종별 적정 운동량과 놀이 활동 가이드</p></div>
-    <div class="card" onclick="openLink('https://www.youtube.com/watch?v=L-QkmopoK7w')"><div class="card-icon">🎓</div><h3>행동 & 훈련</h3><p>기초 훈련부터 문제 행동 교정까지</p></div>
+    <div class="card" onclick="goLink('https://www.animal.go.kr/front/community/health/list.do')"><div class="card-icon">&#x1FA7A;</div><h3>건강 관리</h3><p>정기 검진, 예방접종, 질병 예방 가이드</p></div>
+    <div class="card" onclick="goLink('https://www.youtube.com/watch?v=cDtibw4t1bU')"><div class="card-icon">&#x1F957;</div><h3>영양 &amp; 식이</h3><p>나이·체중별 맞춤 식단과 금지 음식 정보</p></div>
+    <div class="card" onclick="goLink('https://www.youtube.com/watch?v=dNJxme47QbI')"><div class="card-icon">&#x1F3C3;</div><h3>운동 &amp; 활동</h3><p>품종별 적정 운동량과 놀이 활동 가이드</p></div>
+    <div class="card" onclick="goLink('https://www.youtube.com/watch?v=L-QkmopoK7w')"><div class="card-icon">&#x1F393;</div><h3>행동 &amp; 훈련</h3><p>기초 훈련부터 문제 행동 교정까지</p></div>
   </div>
 </div>
 
@@ -147,7 +147,7 @@
       <div class="section-title">인기 동영상 콘텐츠</div>
       <div class="section-sub">전문가가 직접 알려주는 반려동물 케어 영상</div>
     </div>
-    <span class="see-all" onclick="openLink('https://www.youtube.com/results?search_query=반려동물+케어')">전체보기 →</span>
+    <span class="see-all" onclick="goLink('https://www.youtube.com/results?search_query=%EB%B0%98%EB%A0%A4%EB%8F%99%EB%AC%BC+%EC%BC%80%EC%96%B4')">전체보기 &rarr;</span>
   </div>
   <div class="filter-tabs">
     <button class="tab active" onclick="setTab(this)">전체</button>
@@ -158,32 +158,32 @@
     <button class="tab" onclick="setTab(this)">건강</button>
   </div>
   <div class="video-grid">
-    <div class="video-thumb" onclick="openVideo('L-QkmopoK7w')">
-      <div class="thumb-img bg-dog small"><span class="thumb-emoji-sm">🐶</span><div class="play-btn-sm"><div class="play-icon-sm"></div></div><div class="duration-sm">12:34</div></div>
+    <div class="video-thumb" onclick="goVideo('L-QkmopoK7w')">
+      <div class="thumb-img bg-dog small"><span class="thumb-emoji-sm">&#x1F436;</span><div class="play-btn-sm"><div class="play-icon-sm"></div></div><div class="duration-sm">12:34</div></div>
       <div class="video-info"><span class="video-tag tag-green">강아지</span><div class="video-title-sm">집에서 바로 따라하는 강아지 기초 훈련 완전 가이드</div><div class="video-meta">조회 4.2만 · 3일 전</div></div>
     </div>
-    <div class="video-thumb" onclick="openVideo('Q4bYYuJfmN0')">
-      <div class="thumb-img bg-cat small"><span class="thumb-emoji-sm">🐱</span><div class="play-btn-sm"><div class="play-icon-sm"></div></div><div class="duration-sm">8:12</div></div>
-      <div class="video-info"><span class="video-tag tag-blue">고양이</span><div class="video-title-sm">고양이 스트레스 신호 5가지 & 해소법</div><div class="video-meta">조회 2.8만 · 1주 전</div></div>
+    <div class="video-thumb" onclick="goVideo('Q4bYYuJfmN0')">
+      <div class="thumb-img bg-cat small"><span class="thumb-emoji-sm">&#x1F431;</span><div class="play-btn-sm"><div class="play-icon-sm"></div></div><div class="duration-sm">8:12</div></div>
+      <div class="video-info"><span class="video-tag tag-blue">고양이</span><div class="video-title-sm">고양이 스트레스 신호 5가지 &amp; 해소법</div><div class="video-meta">조회 2.8만 · 1주 전</div></div>
     </div>
-    <div class="video-thumb" onclick="openVideo('cDtibw4t1bU')">
-      <div class="thumb-img bg-food small"><span class="thumb-emoji-sm">🥗</span><div class="play-btn-sm"><div class="play-icon-sm"></div></div><div class="duration-sm">15:07</div></div>
+    <div class="video-thumb" onclick="goVideo('cDtibw4t1bU')">
+      <div class="thumb-img bg-food small"><span class="thumb-emoji-sm">&#x1F957;</span><div class="play-btn-sm"><div class="play-icon-sm"></div></div><div class="duration-sm">15:07</div></div>
       <div class="video-info"><span class="video-tag tag-amber">영양</span><div class="video-title-sm">수의사가 알려주는 반려견 올바른 식단 구성</div><div class="video-meta">조회 5.1만 · 2주 전</div></div>
     </div>
-    <div class="video-thumb" onclick="openVideo('i6w6-Qcjo5M')">
-      <div class="thumb-img bg-health small"><span class="thumb-emoji-sm">💊</span><div class="play-btn-sm"><div class="play-icon-sm"></div></div><div class="duration-sm">6:48</div></div>
+    <div class="video-thumb" onclick="goVideo('i6w6-Qcjo5M')">
+      <div class="thumb-img bg-health small"><span class="thumb-emoji-sm">&#x1F48A;</span><div class="play-btn-sm"><div class="play-icon-sm"></div></div><div class="duration-sm">6:48</div></div>
       <div class="video-info"><span class="video-tag tag-green">건강</span><div class="video-title-sm">강아지 피부 트러블 원인과 관리법</div><div class="video-meta">조회 1.9만</div></div>
     </div>
-    <div class="video-thumb" onclick="openVideo('wF4mJ7FQspM')">
-      <div class="thumb-img bg-cat small"><span class="thumb-emoji-sm">✂️</span><div class="play-btn-sm"><div class="play-icon-sm"></div></div><div class="duration-sm">9:22</div></div>
+    <div class="video-thumb" onclick="goVideo('wF4mJ7FQspM')">
+      <div class="thumb-img bg-cat small"><span class="thumb-emoji-sm">&#x2702;&#xFE0F;</span><div class="play-btn-sm"><div class="play-icon-sm"></div></div><div class="duration-sm">9:22</div></div>
       <div class="video-info"><span class="video-tag tag-blue">고양이</span><div class="video-title-sm">집에서 하는 고양이 그루밍 완벽 정리</div><div class="video-meta">조회 3.3만</div></div>
     </div>
-    <div class="video-thumb" onclick="openVideo('dNJxme47QbI')">
-      <div class="thumb-img bg-dog small"><span class="thumb-emoji-sm">🦮</span><div class="play-btn-sm"><div class="play-icon-sm"></div></div><div class="duration-sm">7:55</div></div>
+    <div class="video-thumb" onclick="goVideo('dNJxme47QbI')">
+      <div class="thumb-img bg-dog small"><span class="thumb-emoji-sm">&#x1F9AE;</span><div class="play-btn-sm"><div class="play-icon-sm"></div></div><div class="duration-sm">7:55</div></div>
       <div class="video-info"><span class="video-tag tag-green">훈련</span><div class="video-title-sm">산책이 즐거워지는 리드줄 훈련법</div><div class="video-meta">조회 2.1만</div></div>
     </div>
-    <div class="video-thumb" onclick="openVideo('P7OvNBuy1oo')">
-      <div class="thumb-img bg-health small"><span class="thumb-emoji-sm">🦷</span><div class="play-btn-sm"><div class="play-icon-sm"></div></div><div class="duration-sm">5:30</div></div>
+    <div class="video-thumb" onclick="goVideo('P7OvNBuy1oo')">
+      <div class="thumb-img bg-health small"><span class="thumb-emoji-sm">&#x1F9B7;</span><div class="play-btn-sm"><div class="play-icon-sm"></div></div><div class="duration-sm">5:30</div></div>
       <div class="video-info"><span class="video-tag tag-amber">건강</span><div class="video-title-sm">반려동물 치아 관리, 이렇게 하세요</div><div class="video-meta">조회 1.4만</div></div>
     </div>
   </div>
@@ -203,23 +203,23 @@
   <div class="section-title">반려동물 별 가이드</div>
   <div class="section-sub" style="margin-top:5px;">우리 아이 종류에 맞는 맞춤 정보</div>
   <div class="pets">
-    <div class="pet-card" onclick="openLink('https://search.naver.com/search.naver?where=nexearch&query=강아지+건강+케어')"><div class="pet-emoji">🐶</div><div class="pet-name">강아지</div><div class="pet-desc">품종별 특성 · 훈련 · 질병</div></div>
-    <div class="pet-card" onclick="openLink('https://search.naver.com/search.naver?where=nexearch&query=고양이+건강+케어')"><div class="pet-emoji">🐱</div><div class="pet-name">고양이</div><div class="pet-desc">스트레스 관리 · 영양 · 미용</div></div>
-    <div class="pet-card" onclick="openLink('https://www.youtube.com/results?search_query=토끼+키우기+가이드')"><div class="pet-emoji">🐰</div><div class="pet-name">토끼</div><div class="pet-desc">서식 환경 · 식이 · 사회화</div></div>
-    <div class="pet-card" onclick="openLink('https://www.youtube.com/results?search_query=햄스터+키우기+가이드')"><div class="pet-emoji">🐹</div><div class="pet-name">햄스터</div><div class="pet-desc">케이지 · 먹이 · 수명 관리</div></div>
+    <div class="pet-card" onclick="goLink('https://search.naver.com/search.naver?query=%EA%B0%95%EC%95%84%EC%A7%80+%EA%B1%B4%EA%B0%95+%EC%BC%80%EC%96%B4')"><div class="pet-emoji">&#x1F436;</div><div class="pet-name">강아지</div><div class="pet-desc">품종별 특성 · 훈련 · 질병</div></div>
+    <div class="pet-card" onclick="goLink('https://search.naver.com/search.naver?query=%EA%B3%A0%EC%96%91%EC%9D%B4+%EA%B1%B4%EA%B0%95+%EC%BC%80%EC%96%B4')"><div class="pet-emoji">&#x1F431;</div><div class="pet-name">고양이</div><div class="pet-desc">스트레스 관리 · 영양 · 미용</div></div>
+    <div class="pet-card" onclick="goLink('https://www.youtube.com/results?search_query=%ED%86%A0%EB%81%BC+%ED%82%A4%EC%9A%B0%EA%B8%B0')"><div class="pet-emoji">&#x1F430;</div><div class="pet-name">토끼</div><div class="pet-desc">서식 환경 · 식이 · 사회화</div></div>
+    <div class="pet-card" onclick="goLink('https://www.youtube.com/results?search_query=%ED%96%84%EC%8A%A4%ED%84%B0+%ED%82%A4%EC%9A%B0%EA%B8%B0')"><div class="pet-emoji">&#x1F439;</div><div class="pet-name">햄스터</div><div class="pet-desc">케이지 · 먹이 · 수명 관리</div></div>
   </div>
 </div>
 
 <div class="cta">
   <h2>지금 바로 시작하세요</h2>
   <p>회원가입 없이도 핵심 건강 정보와 동영상을 무료로 확인할 수 있어요.</p>
-  <button class="btn-primary" onclick="openLink('https://map.naver.com/v5/search/동물병원')">무료로 시작하기</button>
+  <button class="btn-primary" onclick="goLink('https://map.naver.com/v5/search/%EB%8F%99%EB%AC%BC%EB%B3%91%EC%9B%90')">무료로 시작하기</button>
 </div>
 
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <div class="logo">🐾 PawCare</div>
+      <div class="logo">&#x1F43E; PawCare</div>
       <p>수의사와 전문가가 검증한 반려동물 건강 정보 플랫폼. 우리 아이의 건강한 삶을 응원합니다.</p>
     </div>
     <div class="footer-col">
@@ -234,27 +234,27 @@
     <div class="footer-col">
       <h4>연락처</h4>
       <ul>
-        <li><span class="icon">✉️</span><a href="mailto:ghn02046@naver.com">ghn02046@naver.com</a></li>
-        <li><span class="icon">📞</span>02-1234-5678</li>
-        <li><span class="icon">📍</span>서울시 강남구 논현동</li>
-        <li><span class="icon">🕐</span>평일 09:00 ~ 18:00</li>
+        <li><span class="icon">&#x2709;&#xFE0F;</span><a href="mailto:ghn02046@naver.com">ghn02046@naver.com</a></li>
+        <li><span class="icon">&#x1F4DE;</span>02-1234-5678</li>
+        <li><span class="icon">&#x1F4CD;</span>서울시 강남구 논현동</li>
+        <li><span class="icon">&#x1F550;</span>평일 09:00 ~ 18:00</li>
       </ul>
     </div>
   </div>
-  <div class="footer-bottom">© 2025 PawCare · 반려동물 건강 정보 플랫폼</div>
+  <div class="footer-bottom">&copy; 2025 PawCare &middot; 반려동물 건강 정보 플랫폼</div>
 </footer>
 
 <script>
-  function setTab(el) {
-    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-    el.classList.add('active');
-  }
-  function openVideo(id) {
-    window.open('https://www.youtube.com/watch?v=' + id, '_blank');
-  }
-  function openLink(url) {
-    window.open(url, '_blank');
-  }
+function setTab(el) {
+  document.querySelectorAll('.tab').forEach(function(t) { t.classList.remove('active'); });
+  el.classList.add('active');
+}
+function goVideo(id) {
+  window.open('https://www.youtube.com/watch?v=' + id, '_blank');
+}
+function goLink(url) {
+  window.open(url, '_blank');
+}
 </script>
 </body>
 </html>
